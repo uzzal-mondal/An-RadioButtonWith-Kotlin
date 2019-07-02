@@ -4,7 +4,9 @@
 
 
    Important method
-    # getCheckedRadioButton()- 
+   
+    #getCheckedRadioButton()- 
+  
 this method work, RadioGroup are the selected the button get the radioButton id. 
 
 ei method er kaj hole radioButton ta select
