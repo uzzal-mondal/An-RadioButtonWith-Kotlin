@@ -80,8 +80,22 @@ class MainActivity : AppCompatActivity() {
 
         // button call to  onClickListner(), then selected to method Male , or Female show the textview.
         // user selected a button and show the result...
-
         // this is button and call to setOnClickListner();
+
+
+        subButton.setOnClickListener {
+
+
+            var selectedId =  radiogp.checkedRadioButtonId
+            var gender = findViewById<RadioButton>(selectedId)
+            var value = gender.text.toString();
+
+            showText.setText("You have selected to  "+value)
+
+        }
+
+
+
 
 
         /*
@@ -114,22 +128,12 @@ class MainActivity : AppCompatActivity() {
 
                */
 
-        subButton.setOnClickListener {
-
-
-            var selectedId =  radiogp.checkedRadioButtonId
-            var gender = findViewById<RadioButton>(selectedId)
-            var value = gender.text.toString();
-
-            showText.setText("You have selected to  "+value)
-
-        }
-
 
 
 
 
     }
 }
+
 
 
